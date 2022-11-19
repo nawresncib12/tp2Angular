@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-body">
+        <div>
+            <input class="form-control" [ngStyle]="{
+            color: color,
+            'font-family': fontFamily,
+            'font-size': fontSize + 'px'
+          }" [(ngModel)]=" text " shadow appearance-none border-rounded w-full py-2 px-2 leading-tight focus:outline-none focus:shadow-outline />
+        </div>
+
+        <input class="form-control" type="color " [(ngModel)]="color " />
+
+        <input class="form-control" type="number " min="10 " [(ngModel)]="fontSize " />
+        <select class="form-select" [(ngModel)]="fontFamily ">
+        <option value="Times New Roman ">Times New Roman</option>
+        <option value="Georgia ">Georgia</option>
+        <option value="Courier New ">Courier New</option>
+        <option value="Papyrus ">Papyrus</option>
+        <option value="Impact ">Impact</option>
+        <option value="Lucida Console ">Lucida Console</option>
+        <option value="Brush Script MT ">Brush Script MT </option>
+        <option value="Verdana ">Verdana</option>
+      </select>
+    </div>
+</div>
